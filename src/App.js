@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
@@ -10,11 +11,13 @@ function App() {
   return (
     <>
       <Navbar>
-        <Home />
-        <About />
-        <Contact />
-        <Services />
-        <Login />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+        </Routes>
       </Navbar>
     </>
   );

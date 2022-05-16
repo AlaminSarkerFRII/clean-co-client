@@ -15,6 +15,7 @@ module.exports = {
           error: "#FA5C5C",
         },
       },
+      "dark",
     ],
   },
   plugins: [require("daisyui")],
